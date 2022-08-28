@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FrontendFunn - Tailwind Components - Navigation Bar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+      integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+
+    <header>
+    <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+      <a href="#" class="p-2 mr-4 inline-flex items-center">
+        
+        <svg xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 512 445.97" class=" fill-current text-white h-8 w-8 mr-3 ">
+         
+         <path d="m76.83 122.53-20.86-20.01H8.46c-2.3 0-4.42-.96-5.96-2.48A8.42 8.42 0 0 1 0 94.06V29.13c0-2.33.97-4.44 2.49-5.97l.21-.19c1.52-1.43 3.57-2.31 5.76-2.31h85.18c2.3 0 4.43.97 5.96 2.5 1.53 1.53 2.5 3.66 2.5 5.97v64.93c0 2.31-.95 4.43-2.49 5.97l-.21.19a8.418 8.418 0 0 1-5.76 2.3H82.6v17.82c0 1.83-1.48 3.31-3.3 3.31-.99 0-1.87-.43-2.47-1.12zm325.96-10.13 17.14-16.43c.66-.64 1.52-.95 2.38-.95l50.87-.02c.53 0 1.03-.22 1.37-.56.34-.35.57-.85.57-1.38V34.44c0-.52-.23-1.02-.58-1.36-.35-.35-.84-.58-1.36-.58h-88.76c-.51 0-1.01.23-1.36.58-.35.35-.58.84-.58 1.36v58.62c0 .52.22 1.02.58 1.37.34.34.84.57 1.36.57h14.94c1.89 0 3.43 1.55 3.43 3.44v13.96zM255.64 393.17c11.22 0 20.32 9.1 20.32 20.32s-9.1 20.31-20.32 20.31-20.31-9.09-20.31-20.31c0-11.22 9.09-20.32 20.31-20.32zm-52.16-115.82c26.42 29.69 86.25 24.46 108.37.15-5.14-5.74-10.61-13.78-15.32-20.68-1.06-1.55-2.07-3.04-3.04-4.44-9.98 6.72-21.86 10.85-36.76 10.81-16.59-.04-29.5-5.73-40.23-14.43-3.02 8.99-7.43 21.37-11.69 27.27-.38.53-.83.97-1.33 1.32zm102.84 52.62H92.33c-8.14 0-14.75 7.62-13.53 16.93l12.82 99.07H59.03c.02-52.91-18.75-117.82 36.61-148.69 20.62-11.5 78.61-15.4 101.79-30.59 3.55-6.65 7.48-18.59 9.82-25.71.27-.8-.16.52.24-.69-8.52-9.15-15.48-19.96-22.17-30.59l-19.09-30.35c-6.98-10.42-10.61-19.94-10.84-27.74-.1-3.68.52-7.02 1.88-9.94 1.42-3.07 3.61-5.64 6.57-7.63 1.37-.93 2.92-1.71 4.62-2.36-1.24-16.46-1.7-37.22-.9-54.58.41-4.13 1.2-8.25 2.35-12.37 6.99-24.98 28.46-42.97 52.98-51.44 11.89-4.11 7.3-13.91 19.33-13.26 28.5 1.56 72.47 19.92 89.37 39.41 23.68 27.3 17.57 60.91 16.77 94.21 5.3 1.61 8.69 4.97 10.08 10.4 1.54 6.02-.13 14.51-5.24 26.08h-.01c-.1.21-.2.42-.32.62l-21.76 35.84c-8.39 13.81-16.91 27.66-28.27 38.3l-.56.51c1.09 1.57 2.27 3.29 3.5 5.1 3.78 5.54 8.08 11.85 12.07 16.78 23.64 14.7 80.55 18.66 100.88 30 50.9 28.37 33.5 98.44 36.46 148.69h-32.44l12.82-99.07c1.21-9.32-5.39-16.93-13.53-16.93H306.32zM179.47 140.49c-4.23.17-7.43 1.05-9.63 2.52-1.25.84-2.17 1.91-2.76 3.18-.65 1.42-.95 3.14-.9 5.12.17 5.81 3.21 13.4 9.1 22.15l.08.13 19.1 30.36c7.66 12.18 15.68 24.59 25.66 33.71 9.59 8.77 21.23 14.71 36.61 14.75 16.67.04 28.86-6.14 38.75-15.4 10.29-9.62 18.41-22.83 26.41-36l21.51-35.43c4.01-9.15 5.47-15.27 4.55-18.86-.54-2.14-2.91-3.18-6.93-3.39-.85-.04-1.73-.05-2.62-.03-.96.03-1.96.1-3 .19-.58.06-1.13.02-1.67-.1-1.91.1-3.88-.03-5.89-.33l7.37-32.6c-54.66 8.62-95.54-31.98-153.32-8.11l4.16 38.42c-2.33.11-4.54.03-6.58-.28zm249.61 33.4c4.09 0 7.41 3.32 7.41 7.42 0 4.09-3.32 7.42-7.41 7.42-4.1 0-7.43-3.33-7.43-7.42 0-4.1 3.33-7.42 7.43-7.42zm30.69 31.85 14.85-25.67 19.79 25.53v14.35h-84.92v-4.94l13.49-.31 6.18-15.15 3.09 10.82h9.28l8.04-20.72 10.2 16.09zm-55.47-55.26h95.3c3.4 0 6.51 1.4 8.76 3.64l.2.23c2.13 2.23 3.44 5.26 3.44 8.54v61.14c0 3.39-1.4 6.5-3.65 8.75-2.27 2.26-5.35 3.66-8.75 3.66h-95.3c-3.39 0-6.5-1.41-8.75-3.66a12.327 12.327 0 0 1-3.65-8.75v-61.14c0-3.41 1.4-6.52 3.65-8.77a12.36 12.36 0 0 1 8.75-3.64zm95.3 7.83h-95.3c-1.25 0-2.4.52-3.23 1.34-.82.83-1.34 1.98-1.34 3.24v61.14c0 1.26.52 2.41 1.34 3.23a4.5 4.5 0 0 0 3.23 1.35h95.3c1.25 0 2.4-.51 3.22-1.34a4.54 4.54 0 0 0 1.35-3.24v-61.14c0-1.2-.47-2.3-1.21-3.12l-.13-.12a4.61 4.61 0 0 0-3.23-1.34zm-98.87-81c-1.9 0-3.45-1.54-3.45-3.44s1.55-3.44 3.45-3.44h47.56a3.44 3.44 0 1 1 0 6.88h-47.56zm0-21.1c-1.9 0-3.45-1.54-3.45-3.44s1.55-3.45 3.45-3.45h58.32c1.9 0 3.44 1.55 3.44 3.45 0 1.9-1.54 3.44-3.44 3.44h-58.32zm22.95 45.67-21.8 20.9c-.63.68-1.53 1.11-2.52 1.11-1.9 0-3.44-1.55-3.44-3.44v-18.57h-11.5c-2.42 0-4.64-1-6.23-2.59a8.843 8.843 0 0 1-2.59-6.23V34.44c0-2.41 1.01-4.63 2.6-6.22 1.6-1.6 3.81-2.6 6.22-2.6h88.76c2.41 0 4.63 1 6.22 2.6a8.783 8.783 0 0 1 2.59 6.22v58.62c0 2.42-.99 4.62-2.58 6.22-1.61 1.6-3.81 2.6-6.23 2.6h-49.5zM21.51 156.72h94.58c3.24 0 6.21 1.34 8.34 3.49 2.16 2.13 3.49 5.1 3.49 8.34v61.49c0 3.23-1.34 6.19-3.48 8.33-2.16 2.16-5.12 3.5-8.35 3.5H21.51c-3.24 0-6.2-1.34-8.35-3.48l-.24-.27c-2-2.12-3.23-4.97-3.23-8.08v-61.49c0-3.24 1.33-6.2 3.47-8.34 2.16-2.15 5.12-3.49 8.35-3.49zm38.98 32.42 19.88 13.87c.35.21.66.49.9.85.94 1.35.6 3.21-.75 4.14l-19.84 13.71c-.52.43-1.18.68-1.89.68-1.65 0-2.99-1.34-2.99-2.99v-27.83c.02-.59.19-1.19.56-1.7a2.957 2.957 0 0 1 4.13-.73zm59.62-13.08H17.49v53.98c0 1.03.39 1.98 1.02 2.68l.17.16c.73.72 1.74 1.18 2.83 1.18h94.58c1.1 0 2.12-.45 2.83-1.17.74-.74 1.19-1.75 1.19-2.85v-53.98zM77.98 67.73c2.4 0 4.35 1.94 4.35 4.34 0 2.39-1.95 4.34-4.35 4.34H32.35c-2.39 0-4.34-1.95-4.34-4.34 0-2.4 1.95-4.34 4.34-4.34h45
+.63zm0-23.16c2.4 0 4.35 1.95 4.35 4.34 0 2.4-1.95 4.35-4.35 4.35H22.03c-2.4 0-4.35-1.95-4.35-4.35 0-2.39 1.95-4.34 4.35-4.34h55.95z"/></svg>
+
+        <span class="text-xl text-white font-bold uppercase tracking-wide"
+          >Nirmal Rathore</span
+        >
+      </a>
+      <button
+        class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+        data-target="#navigation"
+      >
+        <i class="material-icons">menu</i>
+      </button>
+      <div
+        class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+        id="navigation"
+      >
+        <div
+          class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+        >
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Home</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>About</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Services</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Gallery</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Products</span>
+          </a>
+          <a
+            href="#"
+            class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+          >
+            <span>Contact Us</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-col">
+      <div class="lg:w-4/6 mx-auto">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="img/Top.jpg">
+        </div>
+        <div class="flex flex-col sm:flex-row mt-10">
+          <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+            <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex flex-col items-center text-center justify-center">
+              <h2 class="font-medium title-font mt-4 text-gray-900 text-lg"> My <span >Name</span> is <span>Nirmal Rathore</span></h2>
+              <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+              <p class="text-base">हैलो दोस्तों आपका स्वागत है मेरे इस वेबसाईट मे। </p>
+            </div>
+          </div>
+          <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+            <p class="leading-relaxed text-lg mb-4">Meggings portland fingerstache lyft, post-ironic fixie man bun banh mi umami everyday carry hexagon locavore direct trade art party. Locavore small batch listicle gastropub farm-to-table lumbersexual salvia messenger bag. Coloring book flannel truffaut craft beer drinking vinegar sartorial, disrupt fashion axe normcore meh butcher. Portland 90's scenester vexillologist forage post-ironic asymmetrical, chartreuse disrupt butcher paleo intelligentsia pabst before they sold out four loko. 3 wolf moon brooklyn.</p>
+            <a href="#" class="text-indigo-500 inline-flex items-center">Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+          <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+        </div>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            
+            <video class="h-40 rounded w-full object-cover object-center mb-6" controls >
+              <source src="video/Movie777.mp4" type="video/mp4">
+            </video>
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Chichen Itza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+
+           
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403" alt="content">
+            <h3 class="tracking-widest text-indigo-500 text-xs font-medium title-font">SUBTITLE</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Pitchfork Kickstarter Taxidermy</h1>
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table.</p>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Shooting Stars</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <circle cx="6" cy="6" r="3"></circle>
+                <circle cx="6" cy="18" r="3"></circle>
+                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">The Catalyzer</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Neptune</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Melanchole</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Bunker</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+        <div class="xl:w-1/3 md:w-1/2 p-4">
+          <div class="border border-gray-200 p-6 rounded-lg">
+            <div class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-2">Ramona Falls</h2>
+            <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waist co, subway tile poke farm.</p>
+          </div>
+        </div>
+      </div>
+      <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+    </div>
+  </section>
+
+
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
